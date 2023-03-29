@@ -10,33 +10,31 @@ To run this chatbot, you will need:
 3. Maven installed on your local machine
 # Installation
 1. Clone the repository:
-
-bash
-Copy code
 ```
+bash<br>
+Copy code
 git clone https://github.com/yourusername/aws-services-chatbot.git
 ```
 2. Go to the project directory:
-
-bash
-Copy code
 ```
+bash<br>
+Copy code
 cd aws-services-chatbot
 ```
 3. Build the project using Maven:
-go
+go<br>
 Copy code
 ```
 mvn clean package
 ```
 4. Deploy the Lambda function and API Gateway using AWS CLI:
-css
+css<br>
 Copy code
 ```
 aws cloudformation deploy --template-file cloudformation.yml --stack-name aws-services-chatbot --capabilities CAPABILITY_IAM
 ```
 5. Get the API Gateway URL and test the chatbot:
-scss
+scss<br>
 Copy code
 ```
 aws cloudformation describe-stacks --stack-name aws-services-chatbot --query 'Stacks[].Outputs[?OutputKey==`ApiUrl`].OutputValue' --output text
@@ -44,7 +42,7 @@ aws cloudformation describe-stacks --stack-name aws-services-chatbot --query 'St
 # Usage
  To use the chatbot, send a POST request to the API Gateway endpoint with the following JSON payload:
 
-css
+css<br>
 Copy code
 ```
 {
