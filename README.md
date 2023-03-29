@@ -10,15 +10,17 @@ To run this chatbot, you will need:
 3. Maven installed on your local machine
 # Installation
 1. Clone the repository:
-```
+
 bash<br>
 Copy code
+```
 git clone https://github.com/yourusername/aws-services-chatbot.git
 ```
 2. Go to the project directory:
-```
+
 bash<br>
 Copy code
+```
 cd aws-services-chatbot
 ```
 3. Build the project using Maven:
