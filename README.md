@@ -40,7 +40,7 @@ Copy code
 aws cloudformation describe-stacks --stack-name aws-services-chatbot --query 'Stacks[].Outputs[?OutputKey==`ApiUrl`].OutputValue' --output text
 ```
 # Usage
-6. To use the chatbot, send a POST request to the API Gateway endpoint with the following JSON payload:
+ To use the chatbot, send a POST request to the API Gateway endpoint with the following JSON payload:
 
 css
 Copy code
@@ -49,7 +49,7 @@ Copy code
     "input": "What is S3?"
 }
 ```
-7. The chatbot will respond with a message that contains information about S3.
+ The chatbot will respond with a message that contains information about S3.
 
 # Contributing
 If you would like to contribute to this project, please fork the repository and submit a pull request.
