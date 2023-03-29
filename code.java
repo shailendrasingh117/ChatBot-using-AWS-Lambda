@@ -6,6 +6,11 @@ import java.io.OutputStream;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
+import com.amazonaws.services.lexruntime.AmazonLexRuntime;
+import com.amazonaws.services.lexruntime.AmazonLexRuntimeClientBuilder;
+import com.amazonaws.services.lexruntime.model.PostTextRequest;
+import com.amazonaws.services.lexruntime.model.PostTextResult;
+
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
